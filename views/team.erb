@@ -5,10 +5,10 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+   <h1>The team</h1>
+    <% @formatted_position_array.zip(@player_array) do |position, player| %>
+      <p><%= "#{position} #{player}" %></p>
+    <% end %>
 
  </body>
 </html>
-
-
